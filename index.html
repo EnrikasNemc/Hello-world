@@ -4,19 +4,19 @@
 		<meta charset="UTF-8">
 		<title> Hello world</title>
 		<style type="text/css">
-			table{
+			.table{
 				border: 10px solid #9e2121; 
 				border-spacing: 0;
 				border-collapse: collapse;}
-			tbody{
+			.tbody{
 				background: yellow;
 				text-align: center;
 				border-collapse: collapse;}
-			thead{
+			.thead{
 				background: blue;
 				border-collapse: collapse;
 				border: 1px solid black;}
-			td, tr{
+			.borders tr, td{
 				border-collapse: collapse;
 				border: 3px solid black;}
 		</style>
@@ -25,16 +25,16 @@
 		<p>Hello world<br/>
 			HUEEEE
 			<a href="https://www.google.com">Google</a>
-			<table>
-				<thead>
+			<table class="table">
+				<thead class="thead">
 					<td><b>Vardas</b></td>
-					<td style="background: White">Pavarde</td>
+					<td>Pavarde</td>
 					<td>Magic Type</td>
 					<td>Super</td>
 					<td>Nuotrauka</td>
 				</thead>
-				<tbody>
-					<tr>
+				<tbody class="tbody">
+					<tr class="borders">
 						<td>Magic</td>
 						<td>Magic</td>
 						<td>Black</td>
@@ -44,7 +44,7 @@
 					<tr>
 						<td>Magic</td>
 						<td>Magic</td>
-						<td>Black</td>
+						<td>White</td>
 						<td>Magic</td>
 					</tr>
 				</tbody>
