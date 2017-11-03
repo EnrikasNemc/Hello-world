@@ -5,11 +5,20 @@
 		<title> Hello world</title>
 		<style type="text/css">
 			table{
-				border: 1px solid #9e2121; 
+				border: 10px solid #9e2121; 
 				border-spacing: 0;
-				background: yellow;
 				border-collapse: collapse;}
-			tbody{text-align: center;}
+			tbody{
+				background: yellow;
+				text-align: center;
+				border-collapse: collapse;}
+			thead{
+				background: blue;
+				border-collapse: collapse;
+				border: 1px solid black;}
+			td, tr{
+				border-collapse: collapse;
+				border: 3px solid black;}
 		</style>
 	</head>
 	<body>
@@ -17,9 +26,7 @@
 			HUEEEE
 			<a href="https://www.google.com">Google</a>
 			<table>
-				<thead style="
-					background: blue;
-				">
+				<thead>
 					<td><b>Vardas</b></td>
 					<td style="background: White">Pavarde</td>
 					<td>Magic Type</td>
