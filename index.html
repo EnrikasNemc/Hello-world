@@ -9,91 +9,15 @@
 
 	</body>
 			<script type="text/javascript">
-/*				var names = {
-				"user_id":5,
-				"name:": "Enrikas",
-				"address":{
-					"country":"lt",
-					"street": "magical realm"
-				}
-				};
-				var lang = ["lt, en, ja, sr, k, g, e, r, kp"];
+				var language = ["en", "lt", "de", "ru", "ee", "lv", "pl", "pa", "sw", "h"];
+				var currentLanguageIndex = getLanguage();
+				function getLanguage() {
 
-				console.log(names.name);
-				console.log(names.address);
-				console.log(names.address.street);
-				console.log(lang);
+					var date = new Date();
 
-				for (var i = 0; i < lang.lenght; i++){
-					console.log(i, lang)
-				}
-				lang.forEach(function(item){
-					console.log(item);
-				})
-				for (var names in names){
-					console.log(names, names[names])
-				}
-				var i = 0;
-				while(i<100){
-					console.log(i);
-					i++
-					var i = 100;
-					var cal= i % 5;
-
-					if (i % 5 ==="0") {
-
-						console.log(true, cal, i)
-					}
-					else{
-						console.log(false, cal, i)
-					}
-				}
-*/
-				
-
-
-
-
-			
-				var i = 0;
-				var array = [];
-				var amount = 100;
-				var step = 8;
-
-				while(array.length < amount){
-					if(i % step === 0){
-						//array.push(i);
-						array[array.length] = i;
-
-						console.log(i, true);
-					}
-					else{
-						console.log(i, false);
-					}
-					i += step;
+					return date.getSeconds() % 10;
 				}
 
-
-				console.log(array);
-
-				while(array.length < amount){
-					array.push(i);
-					i +=step;
-				}
-				console.log(array)
-				
-
-
-
-
-
-
-
-
-
-
-
-
-
+		console.log(currentLanguageIndex, language[currentLanguageIndex]);
 			</script>
 </html>
