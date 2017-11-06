@@ -14,10 +14,23 @@
 				function getLanguage() {
 
 					var date = new Date();
+					date = date.getSeconds() % 10;
+					date = language[date];
 
-					return date.getSeconds() % 10;
+					return date;
+				}
+				function greetUser(){
+
+					var message = "..."
+					switch (currentLanguageIndex){
+						case "en":
+							message = "Hello world";
+							break;
+						}
+					console.log(message)
 				}
 
-		console.log(currentLanguageIndex, language[currentLanguageIndex]);
+				greetUser();
+
 			</script>
 </html>
