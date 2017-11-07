@@ -12,17 +12,17 @@
 				
 				var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
 
-				//TODO fill missing languages
+				
 				var translations = {
 					"lt": "Labas pasauli",
 					"en": "Hello world",
 					"de": "Hallo Welt",
-					"ru": "Привет мир"
-					"ee": "Tere, Maailm"
-					"lv": "Sveika pasaule"
-					"pl": "Witaj świecie"
-					"es": "Hola Mundo"
-					"fr": "Bonjour le monde"
+					"ru": "Привет мир",
+					"ee": "Tere, Maailm",
+					"lv": "Sveika pasaule",
+					"pl": "Witaj świecie",
+					"es": "Hola Mundo",
+					"fr": "Bonjour le monde",
 					"it": "Ciao mondo"
 				};
 
@@ -33,15 +33,16 @@
 					var date = new Date();
 						date = date.getSeconds() % 10;
 					 	date = languages[date];
-
+					
 				 	return date;
 				}
 
 				function greetUser ()
-				{
-					  //TODO greet user in his language
+				{	
+					var date = getLanguage();
+					alert(date + ": " + translations[date]);
 				}
-
+				
 				greetUser();
 
 			</script>
