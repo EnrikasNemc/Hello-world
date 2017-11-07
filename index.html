@@ -9,25 +9,37 @@
 
 	</body>
 			<script type="text/javascript">
-				var language = ["en", "lt", "de", "ru", "ee", "lv", "pl", "pa", "sw", "h"];
+				
+				var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
+
+				//TODO fill missing languages
+				var translations = {
+					"lt": "Labas pasauli",
+					"en": "Hello world",
+					"de": "Hallo Welt",
+					"ru": "Привет мир"
+					"ee": "Tere, Maailm"
+					"lv": "Sveika pasaule"
+					"pl": "Witaj świecie"
+					"es": "Hola Mundo"
+					"fr": "Bonjour le monde"
+					"it": "Ciao mondo"
+				};
+
 				var currentLanguageIndex = getLanguage();
-				function getLanguage() {
 
+				function getLanguage()
+				{
 					var date = new Date();
-					date = date.getSeconds() % 10;
-					date = language[date];
+						date = date.getSeconds() % 10;
+					 	date = languages[date];
 
-					return date;
+				 	return date;
 				}
-				function greetUser(){
 
-					var message = "..."
-					switch (currentLanguageIndex){
-						case "en":
-							message = "Hello world";
-							break;
-						}
-					console.log(message)
+				function greetUser ()
+				{
+					  //TODO greet user in his language
 				}
 
 				greetUser();
